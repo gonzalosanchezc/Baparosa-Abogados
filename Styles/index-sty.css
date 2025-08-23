@@ -1,0 +1,233 @@
+.hero-header {
+    position: relative;
+    width: 100%;
+    height: 982px;
+    overflow: hidden;
+    display: block;
+    text-align: right;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/architecture.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B3657;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+/* Estilos para el SVG */
+.svg-container {
+    position: absolute;
+    top: 114px;
+    left: -20px;
+    z-index: 3;
+}
+
+.svg-container svg {
+    width: 791px;
+    height: 827px;
+}
+
+/* Estilos para la imagen de balanza */
+.balanza-container {
+    position: absolute;
+    top: 131px;
+    left: 204px;
+    z-index: 4;
+    height: calc(982px - 131px);
+    overflow: hidden;
+}
+
+.balanza-container img {
+    width: 443px;
+    height: 1194px;
+    opacity: 1;
+    box-shadow: 10px 4px 14px 0px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Estilos para el contenido (texto y botón) - se mantienen igual */
+.header-content {
+    position: absolute;
+    left: 709px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 449px;
+    text-align: right;
+}
+
+.header-text {
+    width: 449px;
+    height: 104px;
+    opacity: 1;
+    margin-bottom: 30px;
+    line-height: 1;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+.header-text span {
+    color: #E8C889;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#second-part {
+    color: #FFFF;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Mantén los estilos existentes del botón solo cambiando la alineación */
+.button-link {
+    display: block;
+    text-align: right;
+}
+
+.button-contact {
+    margin-left: auto;
+}
+
+/* Main Section */
+main {
+    margin-top: 95px;
+}
+
+.centered-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.centered-block:first-child {
+    margin-bottom: 154px;
+    /* Separación de 154px */
+}
+
+
+.golden-texts {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 11%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E8C889;
+}
+
+.first-group-txt {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 11%;
+    text-align: center;
+    color: #2B3657;
+    width: 760px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+/* Contenedor principal */
+.fachada-container {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    margin: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.fachada-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/fachada.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+/* Overlay */
+.fachada-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2B3657;
+    opacity: 0.9;
+    z-index: 20;
+}
+
+/* Contenido centrado */
+.fachada-content {
+    position: relative;
+    z-index: 30;
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos de texto */
+.fachada-title {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 11%;
+    text-transform: uppercase;
+    color: #E8C889;
+    margin-bottom: 20px;
+}
+
+.fachada-description {
+    font-family: 'Geomanist', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.fachada-btn-link {
+    display: inline-block;
+    text-decoration: none;
+}
