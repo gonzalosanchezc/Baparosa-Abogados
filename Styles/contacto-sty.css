@@ -43,3 +43,22 @@ main {
     text-align: left;
 }
 
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 900px) {
+    .location-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .google-map {
+        width: 100%;
+        max-width: 430px;
+    }
+}

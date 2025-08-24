@@ -95,4 +95,83 @@ main {
 .button-link {
     display: inline-block;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 1024px) {
+    .service-article {
+        width: 90%;
+        max-width: 800px;
+        gap: 30px;
+    }
+    
+    .first-group-txt {
+        width: 90%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-article {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 30px auto;
+        gap: 25px;
+    }
+    
+    .service-image {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
+    
+    .service-content {
+        width: 100%;
+    }
+    
+    .first-group-txt {
+        width: 90%;
+        max-width: 600px;
+    }
+    
+    .golden-texts {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-article {
+        width: 95%;
+        margin: 25px auto;
+        padding: 0 10px;
+        gap: 20px;
+    }
+    
+    .first-group-txt {
+        width: 95%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .golden-texts {
+        font-size: 28px;
+    }
+    
+    .service-list {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    
+    .service-list li {
+        padding-left: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .nested-list {
+        padding-left: 15px;
+    }
 }

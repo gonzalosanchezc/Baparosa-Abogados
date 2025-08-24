@@ -101,6 +101,67 @@
     margin-bottom: 10px;
 }
 
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .hero-header {
+        height: auto;
+        text-align: center;
+        padding: 40px 0px;
+    }
+
+    .svg-container {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .balanza-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .balanza-container img {
+        width: 250px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .header-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header-text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .header-text span,
+    #second-part {
+        font-size: 28px;
+    }
+
+    .button-link {
+        display: inline-block;
+    }
+
+    .button-contact {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+
 /* Mantén los estilos existentes del botón solo cambiando la alineación */
 .button-link {
     display: block;
@@ -126,9 +187,8 @@ main {
 
 .centered-block:first-child {
     margin-bottom: 154px;
-    /* Separación de 154px */
+    /* Separación en pantallas grandes */
 }
-
 
 .golden-texts {
     font-weight: 400;
@@ -151,6 +211,7 @@ main {
     text-align: center;
     color: #2B3657;
     width: 760px;
+    max-width: 100%;
 }
 
 .button-container {
@@ -159,6 +220,72 @@ main {
     width: 100%;
     margin-top: 120px;
 }
+
+/* --- ADAPTACIONES RESPONSIVAS --- */
+@media screen and (max-width: 1024px) {
+    .first-group-txt {
+        width: 90%;
+        /* en tablets ocupa 90% */
+    }
+
+    .golden-texts {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .centered-block:first-child {
+        margin-bottom: 80px;
+    }
+
+    .golden-texts {
+        font-size: 28px;
+    }
+
+    .first-group-txt {
+        width: 95%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /* svg responsivo */
+    .centered-block svg {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        /* límite en móviles */
+    }
+
+    .button-container {
+        margin-top: 60px;
+    }
+
+    .button-group {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .golden-texts {
+        font-size: 22px;
+    }
+
+    .first-group-txt {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .centered-block svg {
+        max-width: 320px;
+    }
+
+    .button-group {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
 
 /* Contenedor principal */
 .fachada-container {

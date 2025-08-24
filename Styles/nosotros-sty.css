@@ -20,13 +20,6 @@ main {
     padding-right: 30px;
 }
 
-/* .about-title {
-    flex: 0 0 30%;
-    position: sticky;
-    top: 100px;
-    align-self: center;
-} */
-
 .about-text {
     font-family: 'Geomanist', sans-serif;
     font-weight: 400;
@@ -61,4 +54,74 @@ main {
     letter-spacing: 0.11em;
     color: #E8C889;
     margin-right: 5px;
+}
+
+
+/* Media queries para responsive */
+@media screen and (max-width: 1024px) {
+    .about-section {
+        max-width: 90%;
+        padding: 15px;
+    }
+    
+    .about-article {
+        margin-bottom: 50px;
+    }
+    
+    .golden-texts {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-article {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .about-title {
+        width: 100%;
+        margin-bottom: 20px;
+        position: static;
+    }
+    
+    .golden-texts {
+        text-align: left;
+        white-space: normal;
+        margin-bottom: 15px;
+    }
+    
+    .about-content {
+        flex: none;
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .about-text {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-section {
+        padding: 10px;
+    }
+    
+    .about-article {
+        margin-bottom: 30px;
+    }
+    
+    .golden-texts {
+        font-size: 32px;
+    }
+    
+    .about-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .golden span {
+        font-size: 14px;
+    }
 }

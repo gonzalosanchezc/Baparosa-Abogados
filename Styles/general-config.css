@@ -103,20 +103,36 @@ footer {
 .iconsCont {
   position: fixed;
   bottom: 20px;    /* separación desde abajo */
-  right: 20px;     /*separacion desde la derecha*/
+  right: 20px;     /* esquina inferior derecha */
   display: flex;
-  flex-direction: column; /* coloca los íconos uno debajo del otro */
-  gap: 10px;       /* espacio entre los íconos */
-  z-index: 1000;   /* se asegura de estar encima de otros elementos */
+  flex-direction: column; /* uno debajo del otro */
+  gap: 10px;
+  z-index: 1000;
 }
 
 .iconsCont img {
-  width: 40px;     /* tamaño de íconos */
+  width: 40px;
   height: 40px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
 .iconsCont img:hover {
-  transform: scale(1.1); /* efecto al pasar el mouse */
+  transform: scale(1.1);
+}
+
+/* ============================= */
+/* Ajuste responsivo en celulares */
+/* ============================= */
+@media (max-width: 600px) {
+  .iconsCont {
+    bottom: 15px;   /* un poquito más arriba */
+    right: 15px;    /* un poquito más adentro */
+    gap: 8px;
+  }
+
+  .iconsCont img {
+    width: 32px;    /* más chicos en celular */
+    height: 32px;
+  }
 }
